@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  --pink: #ED646D;
+  --pink-light: #ed646d80;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.pink-text {
+  color: #ed646d;
+}
+
+.blue-text {
+  color: #192A52;
+}
+
+.color-gradient {
+  background: rgb(247,222,222);
+  background: linear-gradient(41deg, rgba(247,222,222,1) 40%, rgba(140,236,255,1) 60%, rgba(247,222,222,1) 95%);
+}
+
+.blue-text-large {
+  @apply text-4xl text-[#192A52] font-bold
+}
+
+.blue-text-small {
+  @apply text-lg text-[#192A52] font-bold
+}
+
+.bg-review {
+  background: #fff;
+  background: linear-gradient(180deg, rgb(98, 95, 94) 50%, rgba(98, 95, 94, 0.5) 100%);
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  @apply text-base text-blue-gray-800 font-medium
+}
+
+footer li {
+  margin: 1rem 0;
+}
